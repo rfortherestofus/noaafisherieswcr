@@ -19,6 +19,17 @@ vwm <- function(s, V) { # function for variance-weighted mean
 #' @return A tibble with JPE data
 #' @export
 #'
+#' @references The Juvenile Production Estimate (JPE) reported here, and
+#'   implemented in the package WCR.Fisheries.xxxx (available at <NMFS internal
+#'   github>), uses the "Method 2" approach described in O'Farrell et al. 2018.
+#'   Staff at the NOAA Fisheries Southwest Fisheries Science Center provide the
+#'   latest estimates each year for outmigration survival (Arnold Amman) and the
+#'   fry-to-smolt survival rate (Michael O'Farrell). O’Farrell M. R., W. H.
+#'   Satterthwaite, A. N. Hendrix, and M. S. Mohr. 2018. Alternative Juvenile
+#'   Production Estimate (JPE) forecast approaches for Sacramento River
+#'   winter-run Chinook Salmon. San Francisco Estuary & Watershed Science
+#'   16(4):4.  https://doi.org/10.15447/sfews.2018v16iss4art4
+#'
 #' @examples
 calculate_jpe_data <- function(
     JPI,

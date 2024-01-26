@@ -2,13 +2,13 @@
 % Please edit documentation in R/template.R
 \name{create_new_memo_to_record}
 \alias{create_new_memo_to_record}
-\title{Title}
+\title{Function to create a new Quarto memo to record template file.}
 \usage{
 create_new_memo_to_record()
 }
 \value{
-A new Quarto memo to record template file
+A new Quarto memo to record template file. Run this function to create a new Quarto file.
 }
 \description{
-Title
+Function to create a new Quarto memo to record template file.
 }
