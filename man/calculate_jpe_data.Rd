@@ -7,7 +7,7 @@
 calculate_jpe_data(JPI, V.JPI, timing)
 }
 \arguments{
-\item{timing}{Prelminary or final}
+\item{timing}{Preliminary or final}
 }
 \value{
 A tibble with JPE data

@@ -1,6 +1,6 @@
-#' Title
+#' Function to create a new Quarto memo to record template file.
 #'
-#' @return A new Quarto memo to record template file
+#' @return A new Quarto memo to record template file. Run this function to create a new Quarto file.
 #' @export
 #'
 #' @examples

@@ -1,12 +1,3 @@
-#' vwm
-#'
-#' @param s
-#' @param V
-#'
-#' @return
-#' @export
-#'
-#' @examples
 vwm <- function(s, V) { # function for variance-weighted mean
   inv.var <- 1 / V # survival rate and the variance of that
   w <- inv.var / sum(inv.var) # survival rate
@@ -23,7 +14,7 @@ vwm <- function(s, V) { # function for variance-weighted mean
 #'
 #' @param JPI
 #' @param V.JPI
-#' @param timing Prelminary or final
+#' @param timing Preliminary or final
 #'
 #' @return A tibble with JPE data
 #' @export
