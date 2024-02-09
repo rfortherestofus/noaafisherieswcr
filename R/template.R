@@ -7,7 +7,9 @@
 create_new_memo_to_record <- function() {
   setwd(here::here())
 
-  temp_dir <- as.character(lubridate::now())
+  temp_dir_with_colon <- as.character(lubridate::now())
+
+  temp_dir <- stringr::str_replace_all(temp_dir_with_colon, "\\D", "")
 
   fs::dir_create(temp_dir)
 
@@ -19,7 +21,7 @@ create_new_memo_to_record <- function() {
   setwd(here::here())
 
   temp_quarto_file <- stringr::str_glue("{temp_dir}/{temp_dir}.qmd")
-  new_quarto_file <- stringr::str_glue("memo-to-record-{lubridate::now()}.qmd")
+  new_quarto_file <- stringr::str_glue("memo-to-record-{temp_dir}.qmd")
 
   fs::file_move(temp_quarto_file, new_quarto_file)
 
